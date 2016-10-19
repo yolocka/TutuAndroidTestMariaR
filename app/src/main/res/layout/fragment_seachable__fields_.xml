@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fourbeams.tutuandroidtestmariar.Seachable_Fields_Fragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/station_from_field"
+        android:hint="@string/search_hint_from"
+        android:focusableInTouchMode="false"
+        android:onClick="searchFrom"
+        android:freezesText="true"
+        style="?attr/editTextStyle" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/station_to_field"
+        android:hint="@string/search_hint_to"
+        android:focusableInTouchMode="false"
+        android:onClick="searchTo"
+        android:freezesText="true"
+        style="?attr/editTextStyle"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false"
+        android:onClick="callDatePicker"
+        android:hint="@string/search_hint_date"
+        android:freezesText="true"
+        style="?attr/editTextStyle"/>
+
+</LinearLayout>
